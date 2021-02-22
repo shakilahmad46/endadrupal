@@ -3,12 +3,14 @@ global-styling:
   js:
     js/slick/slick.min.js: {}
     js/global.js: {}
+    js/cbpViewModeSwitch.js: {}
   css:
     component:
       slick/slick.css: {}
       slick/slick-theme.css: {}
       css/style.css: {}
       css/colors.css: {}
+      css/componts.css: {}
 bootstrap:
   js:
     /libraries/popper.js/dist/umd/popper.min.js: {}
