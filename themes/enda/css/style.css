@@ -441,9 +441,78 @@ input.facets-checkbox {
   height: 16px;
   width: 16px; }
 
+.facet-item {
+  margin-bottom: 12px; }
+
 .product-detail-page .block-facets {
   background: red; }
   .product-detail-page .block-facets ul li a {
     color: black !important; }
+
+.cbp-vm-view-list .effect {
+  background: #f8f9fa !important; }
+
+.cbp-vm-view-grid .effect .cbp-vm-cart {
+  display: none;
+  transition: all .5s ease-in-out; }
+.cbp-vm-view-grid .effect .cbp-vm-title {
+  transition: all .5s ease-in-out;
+  display: block; }
+.cbp-vm-view-grid .effect:hover .cbp-vm-cart {
+  display: block;
+  transition: all .5s ease-in-out; }
+.cbp-vm-view-grid .effect:hover .cbp-vm-title {
+  display: none;
+  transition: all .5s ease-in-out; }
+
+.front-add-to-cart button {
+  background: none;
+  color: black;
+  border: none;
+  padding: 30px 0 0 0;
+  margin: 0;
+  background-image: url("../assets/img/cart.png");
+  background-repeat: no-repeat;
+  background-position: center 2px;
+  background-size: 29px; }
+  .front-add-to-cart button:hover {
+    background-color: white !important;
+    color: #4aa52c; }
+
+#block-views-block-articles-block-2 {
+  border-right: 1px solid #f8f9fa !important;
+  border-top: 1px solid #f8f9fa !important;
+  padding: 8px;
+  border-left: 3px solid #f8f9fa !important;
+  border-bottom: 3px solid #f8f9fa !important; }
+  #block-views-block-articles-block-2 h2 {
+    font-size: 20px;
+    text-align: left; }
+  #block-views-block-articles-block-2 i, #block-views-block-articles-block-2 svg {
+    font-size: 15px;
+    color: #4aa52c; }
+  #block-views-block-articles-block-2 a {
+    color: black; }
+    #block-views-block-articles-block-2 a:hover {
+      color: #4aa52c; }
+
+.node__meta {
+  width: fit-content;
+  padding-top: 5px;
+  border-top: 2px solid green;
+  margin-bottom: 35px;
+  margin-top: 18px; }
+  .node__meta em {
+    font-size: 14px;
+    color: black;
+    font-style: normal; }
+
+.statistics-counter {
+  display: none; }
+
+.field--name-field-author .field__item {
+  color: #4aa52c; }
+.field--name-field-author .field__label {
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
