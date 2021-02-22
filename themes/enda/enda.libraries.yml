@@ -8,9 +8,9 @@ global-styling:
     component:
       slick/slick.css: {}
       slick/slick-theme.css: {}
+      css/componts.css: {}
       css/style.css: {}
       css/colors.css: {}
-      css/componts.css: {}
 bootstrap:
   js:
     /libraries/popper.js/dist/umd/popper.min.js: {}

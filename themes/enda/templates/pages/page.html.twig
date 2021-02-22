@@ -112,7 +112,7 @@
         </header>
         {% if page.page_title %}
         <div class="container-fluid">
-                {{ page.page_title }}
+            {{ page.page_title }}
         </div>
         {% endif %}
         {% if page.highlighted %}
@@ -131,7 +131,7 @@
         </div>
         {% endblock %}
         {% endif %}
-    
+
         <div id="main-wrapper" class="layout-main-wrapper clearfix">
             {% block content %}
             <div id="main" class="{{ container }}">
@@ -170,24 +170,10 @@
     </aside>
 </div>
 {% endif %}
-<footer class="site-footer">
-    {% block footer %}
-    <div class="{{ container }}">
-        {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-        <div class="site-footer__top clearfix">
-            {{ page.footer_first }}
-            {{ page.footer_second }}
-            {{ page.footer_third }}
-            {{ page.footer_fourth }}
-        </div>
-        {% endif %}
-        {% if page.footer_fifth %}
-        <div class="site-footer__bottom">
-            {{ page.footer_fifth }}
-        </div>
-        {% endif %}
-    </div>
-    {% endblock %}
-</footer>
+{% if page.footer_new %}
+<div class="container-fluid">
+    {{ page.footer_new }}
+</div>
+{% endif %}
 </div>
 </div>
