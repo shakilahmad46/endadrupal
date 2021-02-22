@@ -1,0 +1,13 @@
+.top-bar{
+  display: flex;
+  justify-content: space-between;
+}
+.top-bar a{
+ color: black;
+}
+.top-bar li{
+  display: inline-block;
+}
+.txt-green{
+  color: #4aa52c;
+}
