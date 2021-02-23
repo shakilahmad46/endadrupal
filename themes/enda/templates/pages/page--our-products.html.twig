@@ -69,6 +69,11 @@
 #}
 <div id="page-wrapper">
     <div id="page product-detail-page">
+       {% if page.top_header %}
+        <div class="container-fluid">
+            {{ page.top_header }}
+        </div>
+        {% endif %}
         <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
             {% block head %}
             <div class="top-navbar">

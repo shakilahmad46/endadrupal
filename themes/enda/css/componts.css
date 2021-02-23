@@ -23,8 +23,8 @@
 .cbp-vm-options {
 	text-align: right;
 	padding-bottom: 10px;
-	border-bottom: 3px solid #7ddb17;
-	border-top: 3px solid #7ddb17;
+	border-bottom: 3px solid #60a700;
+	border-top: 3px solid #60a700;
 /*	margin: 0% 6% 0% 6%;*/
 }
 .cbp-vm-options p {
@@ -49,7 +49,7 @@
 
 .cbp-vm-options a:hover,
 .cbp-vm-options a.cbp-vm-selected {
-	color: #7ddb17;
+	color: #60a700;
 }
 
 .cbp-vm-options a:before {
@@ -205,7 +205,7 @@
     position: absolute;
     top: 0;
     padding: 5%;
-    background: #3c840e;
+    background: #195d2f;
     border-radius: 0% 0% 100% 0%;
 }
 
@@ -216,10 +216,14 @@
 .cbp-vm-view-grid .cbp-vm-cart button{
     width: 100%;
     height: 80px;
-    background: #2ec62c;
+    background: #60a700;
     border: none;
     margin: 0% 0% -6% 0%;
     border-radius: 0% 0% 2% 2%;
+    background-image: url(../assets/img/cart.png);
+    background-repeat: no-repeat;
+    background-position: 35px;
+    font-size: 20px;
 }
 
 
@@ -252,7 +256,7 @@
 	font-family: monospace;
 }
 .cbp-vm-view-list .effect .list-card-wrapper button {
-    background: #44b00c !important;
+    background: #60a700 !important;
 }
 @media screen and (max-width: 66.7em) {
 	.cbp-vm-view-list .cbp-vm-details  {

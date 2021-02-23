@@ -2,16 +2,16 @@ uuid: 6aaedf85-c0a8-49a0-83bd-469812a0116e
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.storage.commerce_product.body
-    - field.storage.commerce_product.field_category
-    - field.storage.commerce_product.field_marque
-    - field.storage.commerce_product.field_rating
-    - field.storage.commerce_product_variation.field_promo
-    - search_api.server.products
   module:
     - commerce_product
     - search_api
+  config:
+    - field.storage.commerce_product.field_category
+    - field.storage.commerce_product.field_marque
+    - field.storage.commerce_product_variation.field_promo
+    - field.storage.commerce_product.field_rating
+    - field.storage.commerce_product.body
+    - search_api.server.products
 id: pro_search
 name: 'Products Search'
 description: ''
@@ -141,21 +141,22 @@ datasource_settings:
 processor_settings:
   add_url: {  }
   aggregated_field: {  }
+  entity_status: {  }
   html_filter:
     all_fields: false
     fields:
       - field_category
       - number
+      - processed
+      - title
     title: true
     alt: true
     tags:
       b: 2
-      em: 1
       h1: 5
       h2: 3
       h3: 2
       strong: 2
-      u: 1
     weights:
       preprocess_index: -15
       preprocess_query: -15
@@ -169,6 +170,27 @@ processor_settings:
       preprocess_query: -20
   language_with_fallback: {  }
   rendered_item: {  }
+  stemmer:
+    all_fields: false
+    fields:
+      - processed
+    exceptions:
+      mexican: mexic
+      texan: texa
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+  tokenizer:
+    all_fields: false
+    fields:
+      - processed
+    ignored: ._-
+    spaces: ''
+    overlap_cjk: 1
+    minimum_word_size: '3'
+    weights:
+      preprocess_index: -6
+      preprocess_query: -6
 tracker_settings:
   default:
     indexing_order: fifo
