@@ -69,21 +69,34 @@
 #}
 <div id="page-wrapper">
     <div id="page">
+       {% if page.top_header %}
+       <div class="container-fluid">
+           {{ page.top_header }}
+       </div>
+       {% endif %}
         <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
             {% block head %}
             <div class="top-navbar">
-                <div class="row m-0 justify-content-between row-cols-12 row-cols-sm-3">
-                    <div class="col p-0">
+                <div class="row m-0 justify-content-between">
+                    <div class="col-12 col-sm-6 col-md-5 p-0">
                         <div class="burger-btn"></div>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-12 col-sm-6 col-md-2 p-0">
                         <div class="brand text-center">
                             {{ page.header }}
                         </div>
                     </div>
-                    <div class="col p-0">
+                    <div class="col-12 col-sm-6 col-md-5 p-0">
                         <div class="align-items-center d-flex h-100 justify-content-end right-menu">
-                            {{ page.top_header_form }}
+                            <div class="col-auto search-form">
+                                {{ page.top_header_form }}
+                            </div>
+                            <div class="col-auto end-tv-btn">
+                                {{ page.enda_tv_btn }}
+                            </div>
+                            <div class="col-auto end-tv-btn">
+                                {{ page.language }}
+                            </div>
                         </div>
                     </div>
                 </div>

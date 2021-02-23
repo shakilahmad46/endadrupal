@@ -801,41 +801,99 @@ input.facets-checkbox {
     padding: 8px;
     border-left: 3px solid #f8f9fa !important;
     border-bottom: 3px solid #f8f9fa !important;
-    h2{
+
+    h2 {
         font-size: 20px;
         text-align: left;
     }
-    i,svg{
+
+    i,
+    svg {
         font-size: 15px;
         color: $col1;
     }
+
     a {
         color: black;
+
         &:hover {
             color: $col1;
         }
     }
 }
-.node__meta{
+
+.node__meta {
     width: fit-content;
     padding-top: 5px;
     border-top: 2px solid green;
     margin-bottom: 35px;
     margin-top: 18px;
-    em{
+
+    em {
         font-size: 14px;
         color: black;
         font-style: normal;
     }
 }
-.statistics-counter{
+
+.statistics-counter {
     display: none;
 }
-.field--name-field-author{
-    .field__item{
+
+.field--name-field-author {
+    .field__item {
         color: $col1;
     }
-    .field__label{
+
+    .field__label {
         font-weight: bold;
+    }
+}
+
+.top-menu {
+    padding: 15px 0;
+
+    p {
+        margin: 0;
+    }
+
+    i,
+    svg {
+        color: $col1;
+        font-size: 20px;
+    }
+
+    a {
+        margin-left: 10px;
+    }
+}
+
+a.enda-tv-btn {
+    background: green;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 11px;
+
+    &:hover {
+        color: #f7f7f7;
+    }
+}
+
+.search-form {
+    input {
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        border: 2px solid $col1;
+        background-image: url('../assets/img/searh.png');
+        background-repeat: no-repeat;
+        background-position: center right 5px;
+        transition: width .3s ease-in-out;
+
+        &:focus {
+            transition: width .3s ease-in-out;
+            width: auto;
+
+        }
     }
 }

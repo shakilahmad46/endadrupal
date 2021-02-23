@@ -488,7 +488,8 @@ input.facets-checkbox {
   #block-views-block-articles-block-2 h2 {
     font-size: 20px;
     text-align: left; }
-  #block-views-block-articles-block-2 i, #block-views-block-articles-block-2 svg {
+  #block-views-block-articles-block-2 i,
+  #block-views-block-articles-block-2 svg {
     font-size: 15px;
     color: #4aa52c; }
   #block-views-block-articles-block-2 a {
@@ -514,5 +515,37 @@ input.facets-checkbox {
   color: #4aa52c; }
 .field--name-field-author .field__label {
   font-weight: bold; }
+
+.top-menu {
+  padding: 15px 0; }
+  .top-menu p {
+    margin: 0; }
+  .top-menu i,
+  .top-menu svg {
+    color: #4aa52c;
+    font-size: 20px; }
+  .top-menu a {
+    margin-left: 10px; }
+
+a.enda-tv-btn {
+  background: green;
+  color: white;
+  padding: 9px 18px;
+  border-radius: 11px; }
+  a.enda-tv-btn:hover {
+    color: #f7f7f7; }
+
+.search-form input {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: 2px solid #4aa52c;
+  background-image: url("../assets/img/searh.png");
+  background-repeat: no-repeat;
+  background-position: center right 5px;
+  transition: width .3s ease-in-out; }
+  .search-form input:focus {
+    transition: width .3s ease-in-out;
+    width: auto; }
 
 /*# sourceMappingURL=style.css.map */
